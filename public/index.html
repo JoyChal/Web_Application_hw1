@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>self introduction</title>
+	<link rel="stylesheet" type="text/css" href="styleSelfIntro.css">
 </head>
 <body>
-    <p1>'Hello my homework 1'</p1>
+    
+    <div id="rectangle">
+        <h1 id= "h1">Hi, I'm Joy.</h1>
+        <p id = "Intro">  大家好，我是經濟系大三生張如嫻，平常興趣是聽音樂、看電影、打球，此外也喜歡寫程式，
+            用電腦語言做不一樣的事，這門課也讓我學到另一種有趣的應用，像是平常我們看不到的網頁「
+            後端」是如何運作的，電腦之間又是怎麼透過網路溝通的等等。此外，最近的我特別喜歡文字，
+            喜歡故事，從語言背後了解彼此。
+        </p>
+        <p><button id = "button" type="button" onclick="appear()">Know more</button></p>
+    </div>
+    
+    
+<script>
+    function appear(){
+      document.getElementById("h1").style.zIndex = -1;
+      document.getElementById("Intro").style.zIndex = 1;
+      document.getElementById("button").style.zIndex = -1;
+    }
+</script>
 </body>
 </html>
